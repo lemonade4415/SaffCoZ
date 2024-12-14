@@ -1,0 +1,1143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tangerine:wght@400;700&display=swap');
+
+:root{ 
+    --bg-color: var(--white);
+    --nav-text: #43225c;
+    --header-footer: var(--light-purple);
+    --light-pink: #f8e2df;
+    --light-purple: #e6d3f8;
+    --logo-color: #240046;
+    --white: #fff;
+    --black: #000;
+    --light-gray: #D4D4D4;
+    --eeee: #f6f5ea;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--header-footer);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px 80px;
+    display: flex;
+    box-shadow: 2px 2px 4px #d4acfa;
+}
+
+.header i{
+    right: 1px;
+}
+
+.header .Logo{
+    font-size: 28px;
+    color: var(--logo-color);
+    font-weight: bold;
+}
+
+.header #dropdown{
+    position: absolute;
+    visibility: hidden;
+}
+
+.header .navbar{
+    right: 20px;
+}
+
+.navbar a{
+    font-size: 18px;
+    color: var(--nav-text);
+    right: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    line-height: 4rem; 
+    font-weight: 500;
+    padding: 0.25rem;
+}
+
+.navbar a:hover{
+    opacity: 50%;
+}
+
+.navbar .active{
+    border-bottom: 2px solid var(--nav-text);
+}
+
+.footer{
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    height: 4rem;
+    background-color: var(--header-footer);
+    color: var(--logo-color);
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    line-height: 4rem; 
+    box-shadow: 4px 4px 4px 4px #d4acfa;
+}
+
+.content-home .new-perfume{
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.content-home .new-perfume h3{
+    font-size: 3rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: var(--white);
+    position: absolute;
+    z-index: 1;
+    top: 100px;
+    left: 200px;
+    text-shadow: 2px 2px 4px rgba(138, 137, 137, 0.7);
+}
+
+.content-home .new-perfume h4{
+    font-size: 2rem;
+    font-weight: 350;
+    letter-spacing: 2px;
+    color: var(--white);
+    position: absolute;
+    z-index: 1;
+    top: 170px;
+    left: 200px;
+    text-shadow: 2px 2px 4px rgba(138, 137, 137, 0.7);
+}
+
+.content-home .new-perfume h5{
+    font-family: "Tangerine", cursive;
+    font-size: 3rem;
+    font-weight: 350;
+    letter-spacing: 2px;
+    color: var(--white);
+    position: absolute;
+    z-index: 1;
+    top: 220px;
+    left: 200px;
+    text-shadow: 2px 2px 4px rgba(138, 137, 137, 0.7);
+}
+
+.content-home .img-banner{
+    width: 100%;
+    height: 1500px;
+    position: relative;
+    display: flex;
+}
+
+.content-home .discount-perfume{
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.content-home .discount-perfume .special-offer{
+    width: 500px;
+    height: 650px;
+    padding: 2rem;
+    margin-left: 5px;
+    margin-right: 5px;
+    display: -moz-grid-line;
+    flex: 1 1 calc(33.333% - 2rem);
+    background-color: var(--eeee);
+}
+
+.content-home .discount-perfume .special-offer .img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* background-color: #f5cac3; */
+}
+
+.content-home .discount-perfume .special-offer .text-container{
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+    /* background-color: aqua; */
+}
+
+.content-home .discount-perfume .special-offer-img{
+    width: 400px;
+    height: 400px;
+    padding: 1rem;
+    justify-content: center;
+    border: black 5px solid;
+}
+
+.content-home .discount-perfume .special-offer .text-container h1{
+    font-family: "Tangerine", cursive;
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.content-home .discount-perfume .special-offer .text-container h2{
+    color: var(--black);
+    font-size: 3rem;
+    font-weight: 200;
+    
+}
+
+.content-home .discount-perfume .special-offer .text-container a{
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.content-home .best-seller{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.content-home .best-seller h3{
+    color: var(--black);
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    padding: 3px;
+    margin-bottom: 10px;
+    font-family: "Tangerine", cursive;
+}
+
+.content-home .best-seller .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width: 100%;
+    gap: 2rem;
+}
+
+.content-home .best-seller .container .box{
+    margin: 10px;
+    width: 400px;
+    background-color: var(--light-pink);
+    justify-content: center;
+    border: var(--light-gray) 1px solid;
+}
+
+.content-home .best-seller .container .box .img-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content-home .best-seller .container .box .img-container .img{
+    width: 300px;
+    height: 300px;
+    border: black 2px solid;
+    padding: 5px;
+}
+
+.content-home .best-seller .container .box .text-container{
+    width: 100%;
+    height: 130px;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.content-home .best-seller .container .box .text-container h1{
+    font-family: "Tangerine", cursive;
+    letter-spacing: 2px;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.content-home .best-seller .container .box .text-container h2{
+    font-size: 15px;
+    font-weight: 200;
+}
+
+.content-home .best-seller .container .text-container a{
+    color: var(--black);
+    text-decoration: underline;
+}
+
+.content-product{
+    width: 100%;
+}
+
+.content-product .title{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content-product h1{
+    font-size: 22px;
+}
+
+.content-product p{
+    width: 50%;
+    text-align: center;
+    color: var(--black);
+    font-weight: 300;
+}
+
+.content-product .container{
+    margin-top: 50px;
+    margin-bottom: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+}
+
+.content-product .container .box{
+    width: 350px;
+    background-color: var(--header-footer);
+    border-radius: 5px;
+    box-shadow: var(--light-gray) 2px 2px 4px;
+}
+
+.content-product .container .box .img-container{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.content-product .container .box .img-container .img{
+    width: 300px;
+    height: 300px;
+    border: 1px var(--light-gray) solid;
+}
+
+.content-product .container .box .text-container{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    color: var(--black);
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+
+.content-product .container .box .text-container h1{
+    font-family: "Tangerine", cursive;
+    font-size: 32px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.content-product .container .box .text-container h2{
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.content-about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-about .banner{
+    width: 100%;
+    height: auto;
+    background-color: var(--light-pink);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-about .btn{
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: #1d1d1d;
+    color: var(--white);
+    position: relative;
+    bottom: 150px;
+    font-size: 15px;
+} 
+
+.content-about .btn:hover{
+    opacity: 80%;
+}
+
+.content-about .banner .img{
+    width: 100%;
+    border-bottom: solid var(--light-gray) 2px;
+    opacity: 90%;
+}
+
+.content-about .text-container{
+    padding: 20px;
+    padding-bottom: 0;
+}
+
+.content-about .section{
+    background-color: var(--light-pink);
+    height: auto;
+    padding-bottom: 100px;
+}
+
+.content-about .text-container h1{
+    font-family: "Tangerine", cursive;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-top: 120px;
+    /* padding-top: 80px; */
+}
+
+.content-about .paragraphs{
+    width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.content-about .paragraphs p{
+    width: 60%;
+}
+
+.content-about .bs{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--eeee);
+    align-items: center;
+    padding: 70px;
+}
+
+.content-about .bs h3{
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.content-about .bs p {
+    width: 60%;
+    padding-top: 10px;
+    font-size: 18px;
+}
+
+.content-about .data{
+    background-color: var(--nav-text);
+}
+
+.content-about .data .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+
+.content-about .box{
+    margin: 50px;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 3px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100px;
+    width: 230px;
+    justify-content: space-around;
+}
+
+.content-about .box i{
+    font-size: 50px;
+    padding-left: 30px;
+}
+
+.content-about .box .text-container{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.content-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    margin-top: 100px;
+}
+
+.content-contact .box{
+    display: flex;
+    justify-content: center;
+}
+
+.content-contact form{
+    width: 40%;
+    box-shadow: 2px 2px 4px #d4acfa;
+    background-color: var(--white);
+    margin: 20px;
+    background-color: var(--light-purple);
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content-contact .title{
+    margin-top: 10px;
+}
+
+.content-contact .box h1{
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.content-contact .box h2{
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.content-contact .box form{
+    margin-top: 10px;
+}
+
+.content-contact .box .input{
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.content-contact .box .input-box{
+    border-radius: 5px;
+    margin-top: 5px;
+    padding: 8px;
+}
+
+.content-contact .box .tac,
+.content-contact .box .agree{
+    font-size: 13px;
+    padding: 3px;
+    margin-top: 3px;
+}
+
+.content-contact .box .button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.content-contact .box .submit{
+    background-color: var(--nav-text);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 80%;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--white);
+    letter-spacing: 2px;
+}
+
+.content-contact .submit:hover{
+    opacity: 70%;
+}
+
+.content-contact .contact-title{
+    background-color: var(--nav-text);
+    text-align: center;
+    border-top: 4px d4acfa;
+    padding-top: 20px;
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.content-contact .contact-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--nav-text);
+    color: var(--white);
+}
+
+.content-contact .contact-info .contact-box{
+    text-align: center;
+    letter-spacing: 2px;
+    height: 100px;
+    width: 230px;
+}
+
+.content-contact .contact-info .contact-box i{
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.content-contact h3{
+    font-size: 18px;
+}
+.content-contact p{
+    font-size: 18px;
+}
+
+.content-location{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 80px;
+    justify-content: center;
+}
+
+.content-location .stores{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.content-location .title{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.content-location .img{
+    height: 300px;
+    width: 450px;
+    border: var(--black) 1px solid;
+}
+
+.content-location .branches{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content-location .store{
+    border-top: var(--black) 1px solid;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.content-location .description{
+    padding-left: 30px;
+}
+
+.content-location .stores .store .branch{
+    display: flex-inline;
+    padding-right: 30px;
+}
+
+.content-location .description h1{
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.content-location .description h2{
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.content-location .description p{
+    font-size: 13px;
+}
+
+.content-location .store:nth-child(even){
+    background-color: var(--eeee);
+}
+
+.content-product-branch{
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--eeee);
+    display: flex;
+}
+
+.content-product-branch .img-container{
+    padding-left: 100px;
+    margin-left: 100px;
+}
+
+.content-product-branch .text-container{
+    width: 400px;
+    height: 500px;
+    margin-left: 170px;
+    background-color: var(--white);
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 2px 2px 4px var(--light-gray);
+}
+
+.content-product-branch .scent{
+    display: flex;
+    gap: 20px;
+}
+
+.content-product-branch h1{
+    font-family: "Tangerine", cursive;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.content-product-branch h2{
+    font-size: 15px;
+    font-weight: 300;
+    font-family: cursive;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.content-product-branch .citrus{
+    background-color: #febe48;
+}
+
+.content-product-branch .woody{
+    background-color: rgb(165, 63, 42);
+}
+
+.content-product-branch .balsamic{
+    background-color: #625a58;
+}
+
+.content-product-branch .earthy{
+    background-color: #9fc164;
+}
+
+.content-product-branch .musk{
+    background-color: #644d47;
+}
+
+.content-product-branch .floral{
+    background-color: #f0515b;
+}
+
+.content-product-branch .sweet{
+    background-color: #f2aaaa;
+}
+.content-product-branch .warm{
+    background-color: #e5b59b ;
+}
+.content-product-branch .aromatic{
+    background-color: #E6E6FA ;
+}
+.content-product-branch .fresh{
+    background-color: #c3ebfb;
+}
+.content-product-branch .tropical{
+    background-color: #FFA500;
+}
+.content-product-branch .creamy{
+    background-color: #fffcd0;
+}
+.content-product-branch .vanilla{
+    background-color: #F3E5AB;
+}
+
+.content-product-branch .description{
+    padding-top: 15px;
+    font-size: 13px;
+    letter-spacing: 1.2px;
+    text-align: justify;
+}
+
+.content-product-branch .img{
+    width: 500px;
+    height: 500px;
+    border: solid var(--logo-color) 5px;
+    padding: 10px; 
+}
+
+/* FOR MOBILE VIEW */
+@media screen and (max-width: 768px){
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 10px 20px;
+    }
+
+    .header .Logo {
+        font-size: 1.2rem;
+    }
+
+    .header .headhead{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .navbar.active {
+        position:initial;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        right: 0;
+        /* background-color: darkgreen; */
+    }
+
+    .navbar{
+        /* background-color: aqua; */
+        display: none;
+
+    }
+
+    .navbar a {
+        font-size: 12px;
+        margin: 5px 0;
+        line-height: normal;
+        width: auto;
+        /* border-bottom: var(--nav-text) 2px solid; */
+    }
+
+    .navbar .active{
+        background-color: var(--nav-text);
+        color: var(--header-footer);
+    }
+
+    .header #dropdown{
+        position: absolute;
+        right: 20px;
+        visibility: visible;
+        top: 20px;
+    }
+
+    .content-home .new-perfume {
+        height: auto;
+        width: 100%;
+    }
+
+    .content-home .new-perfume h3{
+        font-size: 20px;
+        top: 50px;
+        left: 50px;
+    }
+    .content-home .new-perfume h4{
+        font-size: 18px;
+        top: 80px;
+        left: 50px;
+    }
+    .content-home .new-perfume h5{
+        font-size: 18px;
+        top: 110px;
+        left: 50px;
+    }
+
+    .content-home .img-banner {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Discount perfume section */
+    .content-home .discount-perfume {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content-home .discount-perfume .special-offer {
+        width: 90%;
+        height: auto;
+        margin-bottom: 2rem;
+    }
+
+    .content-home .discount-perfume .special-offer-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .content-product .title{
+        margin-top: 50px;
+    }
+
+    .content-product .container .box{
+        width: 240px;
+    }
+
+    .content-product .container .box .img-container .img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .content-product .container .box .img-container{
+        height: 200px;
+    }
+
+    .content-product .container .box .text-container{
+        width: 100%;;
+        padding: 5px;
+    }
+
+    .content-product .container .box .text-container h1{
+        font-size: 20px;
+    }
+
+    .content-product .container .box .text-container h2{
+        font-size: 12px;
+    }
+
+    .content-about .banner{
+        height: auto;
+    }
+
+    .content-about .banner .btn{
+        width: 170px;
+        height: 50px;
+        bottom: 85px;
+        font-size: 12px;
+    }
+
+    .course-about .section{
+        height: auto;
+    }
+
+    .content-about .section .paragraphs{
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+
+    .content-about .text-container h1{
+        margin-top: 40px;
+        font-size: 28px;
+        margin-bottom: 5px;
+    }
+
+    .content-about .box{
+        width: 130px;
+        height: 70px;
+        margin: 30px;
+    }
+
+    .content-about .box i{
+        font-size: 20px;
+        padding-left: 10px;
+    }
+
+    .content-about .box .text-container{
+        font-size: 10px;
+        padding: 10px;
+        padding-left: 8px;
+    }
+
+    .content-about .bs h3{
+        font-size: 18px;
+    }
+
+    .content-about .bs p{
+        width: 80%;
+        font-size: 12px;
+    }
+
+    .content-contact{
+        margin-top: 50px;
+    }
+
+    .content-contact .title{
+        margin-top: 5px;
+    }
+
+    .content-contact form{
+        width: 100%;
+    }
+
+    .content-contact .box h1{
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .content-contact .box h2{
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+
+    .content-contact .box .input{
+        font-size: 12px;
+    }
+
+    .content-contact .box .input-box{
+        padding: 5px;
+    }
+
+    .content-contact .box .tac,
+    .content-contact .box .agree{
+        font-size: 10px;
+        padding: 2px;
+    }
+
+    .content-contact .box .submit{
+        margin-top: 20px;
+        font-size: 12px;
+        letter-spacing: 1px;
+        margin-bottom: 5px;
+    }
+
+    .content-contact .contact-info{
+        padding-bottom: 10px;
+    }
+
+    .content-contact .contact-box{
+        width: 120px;
+        height: 65px;
+        /* background-color: #c3ebfb; */
+    }
+
+    .content-contact .contact-info .contact-box i{
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .content-contact h3{
+        font-size: 12px;
+    }
+    .content-contact p{
+        font-size: 8px;
+    }
+
+    .content-contact .contact-title{
+        font-size: 18px;
+        letter-spacing: 1.25px;
+    }
+
+    .content-location .img{
+        height: 120px;
+        width: 180px;
+    }
+
+    .content-location .title{
+        font-size: 12px;
+        letter-spacing: 1.25px;
+    }
+
+    .content-location .description h1{
+        font-size: 18px;
+    }
+
+    .content-location .description h2{
+        font-size: 10px;
+    }
+
+    .content-location .description p{
+        font-size: 8px;
+    }
+
+    .content-product-branch{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .content-product-branch .img-container{
+        padding-left: 0;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .content-product-branch .img{
+        height: 300px;
+        width: 300px;
+        border: solid var(--logo-color) 3px;
+    }
+
+    .content-product-branch .container{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .content-product-branch .scent{
+        display: flex;
+        gap: 10px;
+    }
+
+    .content-product-branch .text-container{
+        margin: 0;
+        padding: 20px;
+        width: 310px;
+        height: auto;
+    }
+
+    .content-product-branch .description{
+        font-size: 10px;
+        padding-top: 10px;
+    }
+
+    .content-product-branch h1{
+        font-size: 40px;
+    }
+
+    .content-product-branch h2{
+        font-size: 12px;
+        /* width: 50px; */
+    }
+
+    .footer {
+        font-size: 12px;
+        line-height: 2rem;
+        padding: 1rem;
+    }
+}
+
+

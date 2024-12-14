@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaffCoZ</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="headhead">
+            <div class="header-head">
+                <a href="../content/home.html" class="Logo">SaffCoZ</a>   
+            </div>
+            <i id="dropdown" class="fas fa-bars"></i>
+        </div>
+        
+        <nav class="navbar">
+            <a href="../content/home.html">Home</a>
+            <a href="../content/product.html">Products</a>
+            <a href="../content/about.html">About</a>
+            <a href="../content/location.html">Location</a>
+            <a class="active" href="../content/contact.html">Contact Us</a>
+        </nav>
+        
+    </header>
+
+    <div class="content-contact">
+        <div class="box">
+            <form action="../content/contact.html">
+                <div class="title">
+                    <h1>Contact Us</h1>
+                    <h2>We'll get in touch as soon as we can</h2>
+                </div>
+                <div class="input">
+                    <label for="name">Name</label>
+                    <input type="text" class="input-box" id="name" name="name" maxlength="100" placeholder="Input your full name here."/>
+                </div>
+                <div class="input">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="input-box" id="email" name="email" placeholder="Input your email.">
+                </div>
+                <div class="input">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" class="input-box" id="phone" name="phone" placeholder="Please input your phone Number">
+                </div>
+                <div class="input">
+                    <label for="gender">Please Select Your Gender</label>
+                    <select class="input-box" id="gender" name="gender">
+                        <option value="default">---Select Your Gender---</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" class="input-box" placeholder="Text your concern here..."></textarea>
+                </div>
+                <div class="tac">
+                    <input type="checkbox" class="checkbox" id="tac" required>
+                    <label>I agree to terms and conditions.</label>
+                </div>
+                <div class="agree">
+                    <input type="checkbox" class="checkbox" id="agree">
+                    <label>I agree to receive the latest new, exclusive offers, and new product releases on my email.</label>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Submit" class="submit" onclick="form_submit()">
+                </div>
+            </form>
+        </div>
+        <h1 class="contact-title">Contact Information</h1>
+        <div class="contact-info">
+            <div class="contact-box">
+                <i class="fas fa-phone"></i>
+                <h3>Phone Number</h3>
+                <p>+6282199024444</p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-envelope"></i>
+                <h3>Email</h3>
+                <p>saffcoz@email.com</p>
+            </div>
+            <div class="contact-box">
+                <i class="fas fa-location-dot"></i>
+                <h3>Address</h3>
+                <p>Bina Nusantara</p>
+            </div>
+        </div>
+
+    </div>
+    
+    <footer class="footer">
+        copyright &copy;2024 by <span>nad</span> | All Rights Reserved
+    </footer>
+    <script src="../script/script.js"></script>
+</body>
+</body>
+</html>
